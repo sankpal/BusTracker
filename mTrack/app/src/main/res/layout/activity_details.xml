@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#212121"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.nihit.mtrack.Details">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:id="@+id/btnLoc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="toMap" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80px"
+        android:id="@+id/space4"
+        android:layout_below="@+id/btnLoc"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txt_busNo"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:background="#ACE1AF"
+        android:layout_below="@+id/space4"
+        android:layout_alignParentStart="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txt_source"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#ACE1AF"
+        android:layout_below="@+id/space"
+        android:layout_alignParentStart="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txt_destination"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#ACE1AF"
+        android:layout_below="@+id/space2"
+        android:layout_alignParentStart="true"
+        android:padding="10dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Stops"
+        android:id="@+id/txt_path"
+        android:textSize="25dp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:background="#ACE1AF"
+        android:layout_below="@+id/space3"
+        android:layout_alignParentStart="true"
+        android:padding="10dp"
+        android:onClick="toStops" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25px"
+        android:id="@+id/space"
+        android:layout_below="@+id/txt_busNo"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25px"
+        android:id="@+id/space2"
+        android:layout_below="@+id/txt_source"
+        android:layout_alignParentStart="true" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25px"
+        android:id="@+id/space3"
+        android:layout_below="@+id/txt_destination"
+        android:layout_alignParentStart="true" />
+
+
+
+
+</RelativeLayout>
